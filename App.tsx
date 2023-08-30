@@ -7,8 +7,9 @@
  */
 
 import React from 'react';
-import Crashes from 'appcenter-crashes';
 import {Alert, Button, StyleSheet, View} from 'react-native';
+import Crashes from 'appcenter-crashes';
+import Analytics from 'appcenter-analytics';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -35,7 +36,10 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button title="Crash" onPress={() => Crashes.generateTestCrash()} />
+        <Button
+          title="Calculate inflation"
+          onPress={() => Analytics.trackEvent('calculate_inflation')}
+        />
       </View>
     );
   }
