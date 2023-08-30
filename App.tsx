@@ -8,11 +8,30 @@
 
 import React from 'react';
 import Crashes from 'appcenter-crashes';
-import {Button, StyleSheet, View} from 'react-native';
+import {Alert, Button, StyleSheet, View} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 export default class App extends React.Component {
+  constructor() {
+    super();
+
+    this.checkPreviousSession();
+  }
+
+  async checkPreviousSession() {
+    const didCrash = await Crashes.hasCrashedInLastSession();
+
+    if (didCrash) {
+      const report = await Crashes.lastSessionCrashReport();
+      Alert.alert("Sorry about that crash, we'er working on a solution");
+
+      console.log('====================================');
+      console.log(report);
+      console.log('====================================');
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
