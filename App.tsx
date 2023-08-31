@@ -38,7 +38,12 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Button
           title="Calculate inflation"
-          onPress={() => Analytics.trackEvent('calculate_inflation')}
+          onPress={() =>
+            Analytics.trackEvent('calculate_inflation', {
+              Internet: 'Cellular',
+              GPS: 'off',
+            })
+          }
         />
       </View>
     );
