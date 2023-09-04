@@ -54,9 +54,6 @@ export default class App extends React.Component<MyProps, MyState> {
   }
 
   calculate() {
-    console.log('====================================');
-    console.log('states => ', this.state);
-    console.log('====================================');
     const afterInflation = this.calculateInflationImpact(
       this.state.amount,
       this.state.inflationRate / 100,
