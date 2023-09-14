@@ -15,10 +15,19 @@
 		7699B88040F8A987B510C191 /* libPods-inflection_calc-inflection_calcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-inflection_calc-inflection_calcTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A82028972A95ED5900506D62 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82028962A95ED5900506D62 /* AppCenter-Config.plist */; };
+		A840BE6B2AB2DC81007C9348 /* inflection_calcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A840BE6A2AB2DC81007C9348 /* inflection_calcUITests.m */; };
+		A840BE6D2AB2DC81007C9348 /* inflection_calcUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A840BE6C2AB2DC81007C9348 /* inflection_calcUITestsLaunchTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = inflection_calc;
+		};
+		A840BE6E2AB2DC81007C9348 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
@@ -45,6 +54,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = inflection_calc/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-inflection_calc-inflection_calcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inflection_calc-inflection_calcTests.release.xcconfig"; path = "Target Support Files/Pods-inflection_calc-inflection_calcTests/Pods-inflection_calc-inflection_calcTests.release.xcconfig"; sourceTree = "<group>"; };
 		A82028962A95ED5900506D62 /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
+		A840BE682AB2DC81007C9348 /* inflection_calcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = inflection_calcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A840BE6A2AB2DC81007C9348 /* inflection_calcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = inflection_calcUITests.m; sourceTree = "<group>"; };
+		A840BE6C2AB2DC81007C9348 /* inflection_calcUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = inflection_calcUITestsLaunchTests.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -62,6 +74,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-inflection_calc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A840BE652AB2DC81007C9348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +141,7 @@
 				13B07FAE1A68108700A75B9A /* inflection_calc */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* inflection_calcTests */,
+				A840BE692AB2DC81007C9348 /* inflection_calcUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -136,8 +156,18 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* inflection_calc.app */,
 				00E356EE1AD99517003FC87E /* inflection_calcTests.xctest */,
+				A840BE682AB2DC81007C9348 /* inflection_calcUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A840BE692AB2DC81007C9348 /* inflection_calcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A840BE6A2AB2DC81007C9348 /* inflection_calcUITests.m */,
+				A840BE6C2AB2DC81007C9348 /* inflection_calcUITestsLaunchTests.m */,
+			);
+			path = inflection_calcUITests;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -197,6 +227,24 @@
 			productReference = 13B07F961A680F5B00A75B9A /* inflection_calc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A840BE672AB2DC81007C9348 /* inflection_calcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A840BE722AB2DC81007C9348 /* Build configuration list for PBXNativeTarget "inflection_calcUITests" */;
+			buildPhases = (
+				A840BE642AB2DC81007C9348 /* Sources */,
+				A840BE652AB2DC81007C9348 /* Frameworks */,
+				A840BE662AB2DC81007C9348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A840BE6F2AB2DC81007C9348 /* PBXTargetDependency */,
+			);
+			name = inflection_calcUITests;
+			productName = inflection_calcUITests;
+			productReference = A840BE682AB2DC81007C9348 /* inflection_calcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +259,10 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					A840BE672AB2DC81007C9348 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -229,6 +281,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* inflection_calc */,
 				00E356ED1AD99517003FC87E /* inflection_calcTests */,
+				A840BE672AB2DC81007C9348 /* inflection_calcUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +301,13 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A82028972A95ED5900506D62 /* AppCenter-Config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A840BE662AB2DC81007C9348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +481,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A840BE642AB2DC81007C9348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A840BE6D2AB2DC81007C9348 /* inflection_calcUITestsLaunchTests.m in Sources */,
+				A840BE6B2AB2DC81007C9348 /* inflection_calcUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -428,6 +497,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* inflection_calc */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		A840BE6F2AB2DC81007C9348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* inflection_calc */;
+			targetProxy = A840BE6E2AB2DC81007C9348 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -674,6 +748,60 @@
 			};
 			name = Release;
 		};
+		A840BE702AB2DC81007C9348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JNLBKZL6JY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almuzainy.inflection-calcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = inflection_calc;
+			};
+			name = Debug;
+		};
+		A840BE712AB2DC81007C9348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JNLBKZL6JY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almuzainy.inflection-calcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = inflection_calc;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,6 +828,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A840BE722AB2DC81007C9348 /* Build configuration list for PBXNativeTarget "inflection_calcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A840BE702AB2DC81007C9348 /* Debug */,
+				A840BE712AB2DC81007C9348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

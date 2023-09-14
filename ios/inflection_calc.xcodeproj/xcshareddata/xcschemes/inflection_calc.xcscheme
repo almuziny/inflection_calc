@@ -38,6 +38,17 @@
                ReferencedContainer = "container:inflection_calc.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A840BE672AB2DC81007C9348"
+               BuildableName = "inflection_calcUITests.xctest"
+               BlueprintName = "inflection_calcUITests"
+               ReferencedContainer = "container:inflection_calc.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
