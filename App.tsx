@@ -7,14 +7,7 @@
  */
 
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-  Alert,
-  Pressable,
-} from 'react-native';
+import {StyleSheet, Text, TextInput, View, Alert, Button} from 'react-native';
 import Crashes from 'appcenter-crashes';
 import Analytics from 'appcenter-analytics';
 
@@ -118,17 +111,16 @@ export default class App extends React.Component<MyProps, MyState> {
             this.setState({timeInYears: parseFloat(timeInYears)})
           }
         />
-        <Pressable
-          style={styles.button}
+        <Button
+          title="Calculate inflation"
           onPress={() => {
             this.calculate();
             Analytics.trackEvent('calculate_inflation', {
               Internet: 'WiFi',
               GPS: 'Off',
             });
-          }}>
-          <Text style={styles.buttonText}>Calculate inflation</Text>
-        </Pressable>
+          }}
+        />
         <Text style={styles.label}>
           {this.state.timeInYears} years from now you will still have $
           {this.state.amount} but it will only be worth $
@@ -163,21 +155,5 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     marginVertical: 10,
-  },
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    elevation: 3,
-    backgroundColor: 'black',
-  },
-  buttonText: {
-    fontSize: 16,
-    lineHeight: 21,
-    fontWeight: 'bold',
-    letterSpacing: 0.25,
-    color: 'white',
   },
 });
