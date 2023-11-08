@@ -2,7 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 Android: ![Build status](https://build.appcenter.ms/v0.1/apps/26bfe378-b0da-4933-962e-89da88fcd74f/branches/test/badge)
 
-IOS: [![Build status](https://build.appcenter.ms/v0.1/apps/90dd0317-bbfb-4e80-b7d8-d4a1b42e5b04/branches/test/badge)
+IOS: ![Build status](https://build.appcenter.ms/v0.1/apps/90dd0317-bbfb-4e80-b7d8-d4a1b42e5b04/branches/test/badge)
 
 # Getting Started
 
